@@ -51,6 +51,6 @@ The following files are included in this repository:
 - Incident / remediation documentation
 
 ## Author
-[Your Name]
+[Oluwaseun Quadri]
 Cybersecurity Student | Hands-on Security Labs
 
