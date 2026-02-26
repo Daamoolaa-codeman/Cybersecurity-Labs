@@ -8,58 +8,40 @@
 ![OWASP](https://img.shields.io/badge/OWASP-Top_10-000000?style=for-the-badge&logo=owasp&logoColor=white)
 ![Cloud Security](https://img.shields.io/badge/Cloud-Security-blue?style=for-the-badge)
 ![CTF](https://img.shields.io/badge/Capture_The_Flag-CTF-red?style=for-the-badge)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red?style=for-the-badge)
+![Firewall](https://img.shields.io/badge/Firewall-UFW-green?style=for-the-badge)
 
 ---
 
 ## 👋 Welcome
 
-My name is **Oluwaseun Quadri**, and this repository showcases my hands-on cybersecurity lab experience.
+My name is **Oluwaseun Quadri**, and this repository showcases my hands-on cybersecurity lab experience across offensive security, defensive monitoring, cloud security, and structured incident response.
 
-This portfolio demonstrates practical skills in:
-
-- Network Security
-- Vulnerability Assessment & Exploitation
-- Web Application Security
-- SIEM & Incident Response
-- Cloud Security & IAM
-- Capture The Flag (CTF) Challenges
-
-All labs were performed in controlled environments using industry-standard tools and best practices.
+All labs were performed in controlled environments using industry-standard tools and documented following real-world SOC reporting practices.
 
 ---
 
-# 🔐 LAB SUMMARY (6 Hands-On Security Labs)
+# 🔐 LAB SUMMARY (7 Hands-On Security Labs)
 
 ---
 
-## 🛡️ Day 1 – Network Security & Attack Detection
-
-**Focus Areas**
-- Threat Landscape & Attack Surface
-- Network Scanning & Traffic Analysis
-- CIA Triad & AAA
-- Honeypot Deployment
+## 🛡️ Day 1 – Network Security, Reconnaissance & Honeypot Deployment
 
 **Tools Used**
 - Nmap
 - Wireshark
-- Cowrie Honeypot
+- Cowrie
 - Kali Linux
 
 **Key Outcomes**
-- Conducted reconnaissance and port scanning
+- Performed network reconnaissance
 - Captured malicious traffic (.pcap)
-- Analyzed attacker behavior
-- Produced structured incident report
+- Deployed SSH honeypot
+- Documented attacker behavior
 
 ---
 
 ## 🧪 Day 2 – Vulnerability Assessment & Exploitation
-
-**Focus Areas**
-- CVE & CVSS
-- Vulnerability Scanning Workflow
-- Web Application Exploitation
 
 **Tools Used**
 - OpenVAS / Greenbone
@@ -68,17 +50,12 @@ All labs were performed in controlled environments using industry-standard tools
 
 **Key Outcomes**
 - Identified high-risk vulnerabilities
-- Successfully exploited a misconfigured service
-- Developed remediation plan
+- Exploited misconfigured services
+- Developed remediation strategy
 
 ---
 
-## 🌐 Day 3 – Web Application & Endpoint Security
-
-**Focus Areas**
-- OWASP Top 10
-- Web Application Firewalls (WAF)
-- Application Hardening (PrestaShop Case Study)
+## 🌐 Day 3 – Web Application Security & Hardening
 
 **Tools Used**
 - Burp Suite
@@ -88,47 +65,35 @@ All labs were performed in controlled environments using industry-standard tools
 **Key Outcomes**
 - Simulated injection attacks
 - Implemented WAF rules
-- Validated security defenses
-- Completed security hardening checklist
+- Validated security controls
 
 ---
 
-## 📊 Day 4 – Security Monitoring & Incident Response
-
-**Focus Areas**
-- SIEM Deployment
-- Log Analysis
-- MITRE ATT&CK Mapping
-- AI Risk Assessment
+## 📊 Day 4 – Security Monitoring & Incident Response (SIEM)
 
 **Tools Used**
 - Security Onion / ELK Stack
-- Hydra (Brute-force simulation)
+- Hydra
 
 **Key Outcomes**
-- Detected SSH brute-force attack
-- Investigated logs using SIEM dashboard
-- Produced incident analysis report
-- Conducted AI tool risk assessment
+- Simulated SSH brute-force attack
+- Detected abnormal authentication logs
+- Mapped activity to MITRE ATT&CK (T1110)
+- Produced structured incident report
 
 ---
 
-## ☁️ Day 5 – Cloud Security & IAM
-
-**Focus Areas**
-- IAM Misconfiguration
-- Privilege Escalation
-- Least Privilege Enforcement
+## ☁️ Day 5 – Cloud Security & IAM Misconfiguration
 
 **Tools Used**
 - AWS IAM
 - AWS CLI
 
 **Key Outcomes**
-- Simulated privilege escalation attack
-- Identified policy misconfiguration
-- Applied secure IAM policies
-- Documented vulnerability & remediation process
+- Simulated privilege escalation
+- Identified insecure IAM policies
+- Implemented least-privilege controls
+- Documented remediation
 
 ---
 
@@ -137,41 +102,74 @@ All labs were performed in controlled environments using industry-standard tools
 **Platform**
 - TryHackMe
 
+**Key Outcomes**
+- Conducted reconnaissance & exploitation
+- Achieved privilege escalation
+- Produced professional CTF writeup
+
+---
+
+## 🛡️ Day 7 – Enterprise Security Monitoring & Brute-Force Detection Lab
+
 **Focus Areas**
-- Reconnaissance
-- Exploitation
-- Privilege Escalation
-- Reporting
+- Enterprise-style lab architecture
+- DVWA brute-force testing
+- SSH brute-force attack against Cowrie honeypot
+- ELK Stack log aggregation
+- Firewall-based mitigation
+- Incident response documentation
+
+**Tools Used**
+- Kali Linux
+- Nmap
+- Metasploit
+- DVWA
+- Cowrie Honeypot
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- UFW Firewall
+
+**Key Activities**
+- Conducted reconnaissance to identify open ports
+- Performed brute-force login attempts against DVWA
+- Simulated SSH brute-force attack
+- Monitored real-time logs in Kibana dashboard
+- Identified attacker IP and attack patterns
+- Blocked malicious IP using firewall rules
+- Mapped attack to MITRE ATT&CK (T1110 – Brute Force)
 
 **Key Outcomes**
-- Captured multiple flags
-- Documented attack methodology
-- Produced structured CTF writeup
+- Successfully detected credential brute-force activity
+- Investigated attacker behavior via centralized logs
+- Implemented containment strategy
+- Produced full enterprise-style incident report
 
 ---
 
 # 🧠 Core Competencies Demonstrated
 
-✔ Network Traffic Analysis  
-✔ Vulnerability Identification & Exploitation  
-✔ Web Application Testing  
+✔ Network Reconnaissance  
+✔ Vulnerability Assessment & Exploitation  
+✔ Web Application Security Testing  
 ✔ SIEM Log Investigation  
-✔ Incident Reporting  
-✔ Cloud IAM Security  
-✔ Privilege Escalation Mitigation  
-✔ Security Hardening & Defense  
+✔ Honeypot Deployment & Monitoring  
+✔ Firewall Configuration & Threat Containment  
+✔ MITRE ATT&CK Mapping  
+✔ Cloud IAM Security Hardening  
+✔ Structured Security Reporting  
 
 ---
 
 # 📁 Repository Contents
 
-- Vulnerability Reports
-- Incident Analysis Reports
+- Network Architecture Diagrams
+- Vulnerability Assessment Reports
+- Incident Response Reports
 - IAM Misconfiguration Documentation
-- WAF Rule Files
+- WAF Rule Configurations
 - PCAP Files
-- Exploit Screenshots
+- Exploit Evidence & Screenshots
 - CTF Writeups
+- Firewall Rule Evidence
 
 ---
 
@@ -179,15 +177,16 @@ All labs were performed in controlled environments using industry-standard tools
 
 I am actively building expertise in:
 
-- Security Operations (SOC)
+- Security Operations Center (SOC)
 - Blue Team & Threat Detection
-- Cloud Security
-- Application Security
+- Cloud Security Engineering
+- Application Security Testing
+- Incident Response & Digital Forensics
 
 ---
 
 ## 📌 Author
 
 **Oluwaseun Quadri**  
-Cybersecurity Enthusiast | Hands-on Security Labs  
-Focused on Offensive Security & Defensive Monitoring
+Cybersecurity Enthusiast | Offensive & Defensive Security Labs  
+Focused on Security Monitoring, Threat Detection & Cloud Security
